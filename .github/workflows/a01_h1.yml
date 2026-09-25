@@ -1,12 +1,14 @@
 name: a01_h1
+
 on:
-workflow_dispatch:
+  workflow_dispatch:
+
 jobs:
-    Mi_inicio:
+  Mi_inicio:
     runs-on: ubuntu-latest
-steps:
-          - uses: actions/checkout@v4
-          - name:  "varios"
-          run: 
+    steps:
+      - uses: actions/checkout@v4
+      - name: "varios"
+        run: |
           git config user.name "Polo"
           git config user.email "see@gmail.com"
